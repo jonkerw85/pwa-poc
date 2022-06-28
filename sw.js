@@ -2,8 +2,8 @@ self.addEventListener('install', function(e) {
     e.waitUntil(
         caches.open('pwa-example').then(function(cache) {
             return cache.addAll([
-                '/',
-                '/index.html',
+                '/pwa-poc/',
+                '/pwa-poc/index.html',
             ]);
         })
     );
