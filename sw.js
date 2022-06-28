@@ -1,11 +1,11 @@
 self.addEventListener('install', function(e) {
-    // e.waitUntil(
-    //     // caches.open('pwa-example').then(function(cache) {
-    //     //     return cache.addAll([
-    //     //         //
-    //     //     ]);
-    //     // })
-    // );
+    e.waitUntil(
+        caches.open('webshop-cache').then(function(cache) {
+            return cache.addAll([
+                //
+            ]);
+        })
+    );
 });
 
 self.addEventListener('fetch', function(event) {
