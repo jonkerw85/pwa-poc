@@ -4,8 +4,6 @@ self.addEventListener('install', function(e) {
             return cache.addAll([
                 '/',
                 '/index.html',
-                '/app.js',
-                '/app.css' //Add any other assets your web page needs
             ]);
         })
     );
