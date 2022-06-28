@@ -1,12 +1,11 @@
 self.addEventListener('install', function(e) {
-    e.waitUntil(
-        caches.open('pwa-example').then(function(cache) {
-            return cache.addAll([
-                '/pwa-poc/',
-                '/pwa-poc/index.html',
-            ]);
-        })
-    );
+    // e.waitUntil(
+    //     // caches.open('pwa-example').then(function(cache) {
+    //     //     return cache.addAll([
+    //     //         //
+    //     //     ]);
+    //     // })
+    // );
 });
 
 self.addEventListener('fetch', function(event) {
